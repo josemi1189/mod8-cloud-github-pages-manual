@@ -14,19 +14,19 @@
 4. Generamos una build: `pnpm run build`.
 5. En esta rama debemos dejar solo el contenido de la carpeta `/dist` creada en la **build**, eliminando el resto de archivos y carpetas y dejando su contenido en la raíz del repositorio.
 
-   ![Build](/docs/build.jpg)
+   ![Build](docs/build.jpg)
 
 6. Publicamos la rama en GitHub y subimos su contenido.
 
-   ![Repositorio GitHub](/docs/github.jpg)
+   ![Repositorio GitHub](docs/github.jpg)
 
 7. Una vez subido, creará un flujo de trabajo o workflow de forma automática, la cual podemos ver su proceso desde `Actions`.
 
-   ![Actions](/docs/actions.jpg)
+   ![Actions](docs/actions.jpg)
 
 8. Una vez completada la tarea, nos genera la URL publicada que también podremos ver en el repositorio de GitHub.
 
-   ![Deployments URL](/docs/deploy.jpg)
+   ![Deployments URL](docs/deploy.jpg)
 
 > Si al cargar la página se queda en blanco, podremos comprobar que no encuentra los archivos .css y .js.
 
@@ -43,6 +43,12 @@ Para solucionar este problema:
   })
   ```
 
-- Actualizar los cambios en la rama `main`.
-- Generamos una nueva build desde la rama principal, vamos a la rama `gh-pages` y de nuevo dejamos en la raíz solo el contenido de la carpeta **/dist**.
-- Subimos los cambios a GitHub, se genera un nuevo Flujo de trabajo (Actions) y si todo es correcto se publican los cambios realizados.
+- Generar nueva build y subir los archivos generados en la rama `gh-pages`.
+
+<br>
+
+---
+
+**IMPORTANTE**
+
+Para posteriores modificaciones, se generará la build desde la rama main y podemos pasar los archivos necesarios a `gh-pages` de forma manual copiando los archivos en local, cambiando de rama y pasando de nuevo los archivos al repositorio para que se carguen en la rama de despliegue.
