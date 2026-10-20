@@ -2,9 +2,9 @@
 
 ## Enlaces
 
-[Repositorio GitHub](https://github.com/josemi1189/mod8-cloud)
+[Repositorio GitHub](https://github.com/josemi1189/mod8-cloud-github-pages-manual)
 
-[GitHub Pages](https://josemi1189.github.io/mod8-cloud/)
+[GitHub Pages](https://josemi1189.github.io/mod8-cloud-github-pages-manual/)
 
 ## Desplegar en Github Pages de forma manual.
 
@@ -36,7 +36,7 @@ Para solucionar este problema:
 
   ```ts
   export default defineConfig({
-    base: "/modulo-cloud-gh-pages-manual/",
+    base: "/mod8-cloud-github-pages-manual/",
     plugins: [tsConfigPaths(), checker({ typescript: true }), react()],
 
     [...]
